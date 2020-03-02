@@ -1,0 +1,15 @@
+// colors
+
+$background-color: rgb(245, 245, 245);
+$background-todo:rgb(255, 255, 255);
+$letters-gray:rgb(160, 160, 160);
+$light-dark:#09c6f9;
+$deep-dark:#045de9;
+$popup-background:rgb(55, 55, 55);
+
+
+
+
+@mixin border-radius($radius) {
+    border-radius: $radius;
+}

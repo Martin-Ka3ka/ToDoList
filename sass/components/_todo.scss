@@ -1,0 +1,108 @@
+.todo {
+    width: 800px;
+    @include border-radius(5px);
+    background-color: $background-todo;
+    box-shadow: 4px 4px 5px rgba(82, 82, 82, 0.4);
+    text-align: center;
+
+    header {
+        @include border-radius(5px 5px 0 0);
+        padding: 40px;
+        background-image: linear-gradient(340deg, $deep-dark 0%, $light-dark 100%);
+
+        h1 {
+            color: $background-color;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .todoInput {
+            width: 80%;
+            padding: 10px 20px;
+            margin-right: 20px;
+            @include border-radius(5px);
+            background-color: $background-color;
+        }
+
+        .addBtn {
+            padding: 10px 22px;
+            color: $letters-gray;
+            border: none;
+            @include border-radius(5px);
+            text-transform: uppercase;
+            background-color: $background-color;
+            cursor: pointer;
+            transition: .3s;
+
+            &:hover {
+                color: $background-todo;
+                background-color: $light-dark;
+            }
+        }
+    }
+
+    .todoList {
+        padding: 20px 0;
+
+        h3 {
+            text-transform: uppercase;
+            margin-bottom: 16px;
+            color: $letters-gray;
+        }
+
+        .alertInfo {
+            margin-top: 20px;
+            color: $deep-dark;
+            font-weight: bold;
+        }
+
+        ul {
+            li {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 15px;
+                padding-left: 20px;
+                text-align: left;
+                list-style: none;
+                background-color: $background-color;
+                color: $letters-gray;
+
+                .tools {
+                    font-size: 0;
+
+                    button {
+                        padding: 15px 10px;
+                        border: none;
+                        background-color: transparent;
+                        cursor: pointer;
+                        transition: .2s;
+
+                        &:hover {
+                            background-color: $background-todo;
+                        }
+                    }
+
+                    .complete {
+                        color: $light-dark;
+                    }
+
+                    .edit {
+                        font-weight: bold;
+                        color: rgb(81, 172, 6);
+                    }
+
+                    .delete {
+                        color: tomato;
+                    }
+                }
+            }
+
+            .completed {
+                font-size: 12px;
+                text-decoration: line-through;
+                font-style: italic;
+            }
+        }
+    }
+}

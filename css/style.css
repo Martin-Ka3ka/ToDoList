@@ -1,0 +1,189 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin-top: 120px;
+  font-family: 'Roboto';
+  background-color: whitesmoke;
+}
+
+.todo {
+  width: 800px;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 4px 4px 5px rgba(82, 82, 82, 0.4);
+  text-align: center;
+}
+
+.todo header {
+  border-radius: 5px 5px 0 0;
+  padding: 40px;
+  background-image: linear-gradient(340deg, #045de9 0%, #09c6f9 100%);
+}
+
+.todo header h1 {
+  color: whitesmoke;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.todo header .todoInput {
+  width: 80%;
+  padding: 10px 20px;
+  margin-right: 20px;
+  border-radius: 5px;
+  background-color: whitesmoke;
+}
+
+.todo header .addBtn {
+  padding: 10px 22px;
+  color: #a0a0a0;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  background-color: whitesmoke;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.todo header .addBtn:hover {
+  color: white;
+  background-color: #09c6f9;
+}
+
+.todo .todoList {
+  padding: 20px 0;
+}
+
+.todo .todoList h3 {
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  color: #a0a0a0;
+}
+
+.todo .todoList .alertInfo {
+  margin-top: 20px;
+  color: #045de9;
+  font-weight: bold;
+}
+
+.todo .todoList ul li {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  margin: 15px;
+  padding-left: 20px;
+  text-align: left;
+  list-style: none;
+  background-color: whitesmoke;
+  color: #a0a0a0;
+}
+
+.todo .todoList ul li .tools {
+  font-size: 0;
+}
+
+.todo .todoList ul li .tools button {
+  padding: 15px 10px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.todo .todoList ul li .tools button:hover {
+  background-color: white;
+}
+
+.todo .todoList ul li .tools .complete {
+  color: #09c6f9;
+}
+
+.todo .todoList ul li .tools .edit {
+  font-weight: bold;
+  color: #51ac06;
+}
+
+.todo .todoList ul li .tools .delete {
+  color: tomato;
+}
+
+.todo .todoList ul .completed {
+  font-size: 12px;
+  text-decoration: line-through;
+  font-style: italic;
+}
+
+.popup {
+  display: none;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  position: fixed;
+  align-items: center;
+  bottom: 20px;
+  left: 50%;
+  width: 800px;
+  border-radius: 5px;
+  transform: translateX(-50%);
+  background-color: #373737;
+}
+
+.popup h3 {
+  padding: 20px;
+  color: whitesmoke;
+}
+
+.popup .popupBody {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 10px;
+  width: 90%;
+}
+
+.popup .popupBody .popupInfo {
+  margin-bottom: 20px;
+}
+
+.popup .popupBody .popupInput {
+  width: 100%;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+.popup .popupBody .popupBtn {
+  width: 30%;
+  display: inline-block;
+  padding: 10px 22px;
+  margin: 20px;
+  border: none;
+  color: #a0a0a0;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: .4s;
+}
+
+.popup .popupBody .popupBtn:hover {
+  background-color: #045de9;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
