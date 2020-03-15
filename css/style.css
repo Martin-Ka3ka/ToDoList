@@ -1,3 +1,10 @@
+.completed {
+  font-size: 12px;
+  text-decoration: line-through;
+  font-style: italic;
+  color: gray;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -109,6 +116,10 @@ body {
   color: #09c6f9;
 }
 
+.todo .todoList ul li .tools .completed {
+  color: #a0a0a0;
+}
+
 .todo .todoList ul li .tools .edit {
   font-weight: bold;
   color: #51ac06;
@@ -116,12 +127,6 @@ body {
 
 .todo .todoList ul li .tools .delete {
   color: tomato;
-}
-
-.todo .todoList ul .completed {
-  font-size: 12px;
-  text-decoration: line-through;
-  font-style: italic;
 }
 
 .popup {
@@ -160,6 +165,7 @@ body {
 
 .popup .popupBody .popupInfo {
   margin-bottom: 20px;
+  color: whitesmoke;
 }
 
 .popup .popupBody .popupInput {

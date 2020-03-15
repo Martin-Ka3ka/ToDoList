@@ -85,7 +85,13 @@
 
                     .complete {
                         color: $light-dark;
+
                     }
+
+                    .completed {
+                        color: $letters-gray;
+                    }
+
 
                     .edit {
                         font-weight: bold;
@@ -96,12 +102,6 @@
                         color: tomato;
                     }
                 }
-            }
-
-            .completed {
-                font-size: 12px;
-                text-decoration: line-through;
-                font-style: italic;
             }
         }
     }
